@@ -1,0 +1,88 @@
+@use '~@bsi-cx/design-standard-library-web/content-elements/base/button/prototype/styles.scss' as element;
+
+@include element.styles('button-v3cFFn', bsiProperty('primaryColor', #e35d50), bsiProperty('secondaryColor', #e35d50), bsiProperty('darkColor', #000000), bsiProperty('lightColor', #ffffff));
+
+.bsi-element-button-45gtfb {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #fff;
+    box-sizing: border-box;
+    display: inline-flex;
+}
+
+.bsi-element-button-45gtfb .btn {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    font-family: inherit;
+    margin: 0;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+    position: relative;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border-radius: 4px;
+    background: #e35d50;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 2px 8px 0 rgba(0, 0, 0, 0.08), 0 12px 16px 0 rgba(0, 0, 0, 0.02);
+    cursor: pointer;
+    transition: box-shadow 200ms, color 200ms, background 200ms, transform 200ms;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1.4rem 2.4rem;
+    min-width: 160px;
+    min-height: 44px;
+    text-decoration: none;
+    line-height: 1.15;
+}
+
+.bsi-element-button-45gtfb.bsi-btn-color-primary.bsi-btn-filled .btn {
+    color: #fff;
+    background-color: #e35d50;
+    border-color: #e35d50;
+    :hover {
+      color: #fff;
+      background-color: #e35d50;
+      border-color: #e35d50;
+    }
+}
+
+$colors: ("primary": "#e35d50", "secondary": "#e35d50", "dark": "#e35d50", "light": "#e35d50");
+    @each $name, $color in $colors {
+      $contrast-color: "#fff";
+      @if $name == "light" {
+        $contrast-color: "#fff";
+      }
+      .bsi-btn-color-#{$name} {
+        .bsi-btn-filled .btn {
+          color: $contrast-color;
+          background-color: $color;
+          border-color: $color;
+
+          :hover {
+            color: $color;
+            background-color: $color;
+            border-color: $color;
+          }
+        }
+
+        .bsi-btn-outline .btn {
+          color: $contrast-color;
+          background-color: $color;
+          border-color: $color;
+
+          :hover {
+            color: $contrast-color;
+            background-color: $color;
+            border-color: $color;
+          }
+        }
+      }
+    }

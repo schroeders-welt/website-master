@@ -1,0 +1,24 @@
+{
+  "name": "@bsi-cx/design-master-template-web",
+  "version": "1.1.4",
+  "description": "BSI CX master template for websites and landing pages",
+  "scripts": {
+    "build:dev": "webpack --config webpack.config.js --mode development --progress",
+    "build:prod": "webpack --config webpack.config.js --mode production --progress",
+    "watch": "webpack --config webpack.config.js --mode development --watch --progress"
+  },
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Marco Schroeder",
+      "url": "https://www.hannoversche.de/"
+    }
+  ],
+  "dependencies": {
+    "@bsi-cx/design-standard-library-web": "github:bsi-software/bsi-cx-design-standard-library-web#semver:^1.0.0",
+    "friendly-challenge": "^0.9.11"
+  },
+  "devDependencies": {
+    "@bsi-cx/design-build": "^1.0.0"
+  }
+}

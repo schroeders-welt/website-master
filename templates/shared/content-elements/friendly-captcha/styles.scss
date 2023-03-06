@@ -1,0 +1,12 @@
+@mixin styles($id: 'friendlycaptcha-frc7Z65R') {
+  .bsi-element-#{$id} {
+    label, input {
+      display: none;
+    }
+
+    img {
+      width: 80px;
+    }
+
+  }
+}
