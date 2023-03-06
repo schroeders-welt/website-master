@@ -1,6 +1,5 @@
 {% apply spaceless %}
     {% set friendlycaptchaElementId = elementId ?: 'friendlycaptcha-frc7Z65R' %}
-    {% set friendlycaptchaElementPartId = elementPartId ?: 'friendlycaptcha-part-frc9G45E' %}
     {% set friendlycaptchaSitekey = '1234567890' %}
     {% set friendlycaptchaDataLang = 'de' %}
     {% set friendlycaptchaDataPuzzleEndpoint = 'https://eu-api.friendlycaptcha.eu/api/v1/puzzle' %}
@@ -8,7 +7,6 @@
 
     <div class="{{ 'bsi-element-' ~ friendlycaptchaElementId }} frc-captcha"
         data-bsi-element="{{ friendlycaptchaElementId }}"
-        data-bsi-element-part="{{ friendlycaptchaElementPartId }}"
         data-sitekey="{{ friendlycaptchaSitekey }}"
         data-lang="{{ friendlycaptchaDataLang }}"
         data-puzzle-endpoint="{{ friendlycaptchaDataPuzzleEndpoint }}"

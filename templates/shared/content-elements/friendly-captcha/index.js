@@ -7,8 +7,3 @@ module.exports = cx.contentElement
   .withFile(require('./template.twig'))
   .withIcon(Icon.FORMFIELD)
   .withStyleConfigs()
-  .withParts(
-    cx.part.formField
-      .withId('friendlycaptcha-part-frc9G45E')
-      .withLabel('FriendlyCaptchaPart')
-  )
