@@ -3,7 +3,7 @@
 {% set colTwoLeftContentElements = [ 'base/h1', 'base/h2', 'base/h3', 'base/text'] %}
 {% set colTwoRightContentElements = [ 'base/figure'] %}
 {% set colOneContentElements = [ 'base/table', 'layout/spacer', 'base/news-snippet', 'layout/spacer', 'base/video', 'layout/spacer', 'base/social-media-share'] %}
-{% set formElements = [ 'base/h2', 'form/multi-column', 'form/form-field-tel', 'form/text-area', 'form/select', 'form/checkbox', 'form/radio'] %}
+{% set formElements = [ 'base/h2', 'form/multi-column', 'form/form-field-tel', 'form/text-area', 'form/select', 'form/checkbox', 'form/radio', 'advanced/webcam-image-upload'] %}
 {% set colThreeContentElements = [ 'base/card'] %}
 {% set colFourContentElements = [ 'base/figure'] %}
 
@@ -31,8 +31,8 @@
                 {% for element in colTwoLeftContentElements %}
                     {% include '@bsi-cx/design-standard-library-web/content-elements/' ~ element ~ '/template.twig' %}
                 {% endfor %}
-                
-                {% include './../shared/content-elements/hl_button/template.twig' %}
+
+                {% include './../shared/content-elements/button/template.twig' %}
 
             {% endblock %}
             {% block col_two_dropzone_2 %}
@@ -62,7 +62,7 @@
                             {% include '@bsi-cx/design-standard-library-web/content-elements/' ~ element ~ '/template.twig' %}
                         {% endfor %}
 
-                        {% include './../shared/content-elements/friendly-captcha/template.twig' %}
+                        {% include './../shared/content-elements/button/template.twig' %}
 
                     {% endblock %}
                 {% endembed %}
@@ -140,6 +140,9 @@
                 colOneAlignment: 'bsi-col-align-center'
             } %}
                 {% block col_one_dropzone %}
+                    {# {% include '@bsi-cx/design-standard-library-web/content-elements/base/text/template.twig' with {
+                        text: 'Lorem ipsum <a href="#">Link</a>'
+                    } only %} #}
                     {% include '@bsi-cx/design-standard-library-web/content-elements/base/social-media-follow/template.twig' with {
                         iconColor: 'bsi-icon-color-light'
                     } only %}

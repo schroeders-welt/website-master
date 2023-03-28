@@ -44,7 +44,7 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/base/text'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/figure'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/banner'),
-        require('@bsi-cx/design-standard-library-web/content-elements/base/button'),
+        require('./../shared/content-elements/button'),
         require('./../shared/content-elements/hl_button'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/card'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/news-snippet'),

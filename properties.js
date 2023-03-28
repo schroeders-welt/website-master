@@ -43,7 +43,7 @@ module.exports = {
   /* ============================================================= */
 
   // Allowed values: de, en
-  language: 'en',
+  language: 'de',
 
 
 
@@ -113,42 +113,43 @@ module.exports = {
 
   /* ------------------------ Button color ----------------------- */
   // From the following choices, select the value that you want to be preselected:
-  // Primary color: 'bsi-btn-color-primary'
-  // Secondary color: 'bsi-btn-color-secondary'
-  // Dark: 'bsi-btn-color-dark'
-  // Light: 'bsi-btn-color-light'
-  buttonColor: 'bsi-btn-color-primary',
+  // Primary color: 'hl-btn-color-primary'
+  // Secondary color: 'hl-btn-color-secondary'
+  // Dark: 'hl-btn-color-dark'
+  // Light: 'hl-btn-color-light'
+  buttonColor: 'hl-btn-color-primary',
 
   /* ----------------------- Button layout ---------------------- */
   // From the following choices, select the value that you want to be preselected:
-  // Filled: 'bsi-btn-filled'
-  // Outline: 'bsi-btn-outline'
-  buttonLayout: 'bsi-btn-filled',
+  // Filled: 'hl-btn-filled'
+  // Outline: 'hl-btn-outline'
+  buttonLayout: 'hl-btn-filled',
 
   /* ------------------------ Button size ----------------------- */
   // From the following choices, select the value that you want to be preselected:
-  // Small: 'bsi-btn-size-sm'
-  // Medium: 'bsi-btn-size-md'
-  // Large: 'bsi-btn-size-lg'
-  buttonSize: 'bsi-btn-size-sm',
+  // Condensed: 'hl-btn-size-cn'
+  // Small: 'hl-btn-size-sm'
+  // Medium: 'hl-btn-size-md'
+  // Large: 'hl-btn-size-lg'
+  buttonSize: 'hl-btn-size-md',
 
   /* ------------------------ Button width ----------------------- */
   // From the following choices, select the value that you want to be preselected:
-  // Default: 'bsi-btn-width-default'
-  // Wide: 'bsi-btn-width-wide'
-  buttonWidth: 'bsi-btn-width-default',
+  // Default: 'hl-btn-width-default'
+  // Wide: 'hl-btn-width-wide'
+  buttonWidth: 'hl-btn-width-default',
 
   /* -------------------- Button border radius ------------------- */
   // From the following choices, select the value that you want to be preselected:
-  // Sharp corners: 'bsi-corner-sharp'
-  // Rounded corners: 'bsi-corner-rounded'
-  buttonBorderRadius: 'bsi-corner-rounded',
+  // Sharp corners: 'hl-corner-sharp'
+  // Rounded corners: 'hl-corner-rounded'
+  buttonBorderRadius: 'hl-corner-rounded',
 
   /* ---------------------- Button letter case ------------------- */
   // From the following choices, select the value that you want to be preselected:
-  // Default: 'bsi-btn-letter-default'
-  // All uppercase: 'bsi-btn-letter-uppercase'
-  buttonLetterCase: 'bsi-btn-letter-default',
+  // Default: 'hl-btn-letter-default'
+  // All uppercase: 'hl-btn-letter-uppercase'
+  buttonLetterCase: 'hl-btn-letter-default',
 
 
   /* ============================================================= */

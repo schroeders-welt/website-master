@@ -4,7 +4,7 @@ const {BuildConfig, WebpackConfigBuilder, Version, DesignType, ModuleConfig} = r
 
 const landingpageBuildConfig = new BuildConfig()
   .withName('master-template-cx-22.0-landingpage')
-  .withVersion('1.1.4')
+  .withVersion('1.1.5')
   .withDesignType(DesignType.LANDINGPAGE)
   .withTargetVersion(Version.CX_22_0)
   .withRootPath(path.resolve(__dirname, 'templates', 'landingpage'))
@@ -17,7 +17,7 @@ const landingpageBuildConfig = new BuildConfig()
 
 const websiteBuildConfig = new BuildConfig()
   .withName('master-template-cx-22.0-website')
-  .withVersion('1.1.4')
+  .withVersion('1.1.5')
   .withDesignType(DesignType.WEBSITE)
   .withTargetVersion(Version.CX_22_0)
   .withRootPath(path.resolve(__dirname, 'templates', 'website'))

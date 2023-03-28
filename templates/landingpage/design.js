@@ -5,8 +5,8 @@ const {cx, SchemaVersion, Locale} = require('@bsi-cx/design-build');
 module.exports = cx.design
   .withSchemaVersion(SchemaVersion.V_22_0)
   .withTitle('BSI CX Master Template - Landingpage')
-  .withAuthor('Design Team - BSI Business Systems Integration AG')
-  .withDate('21.01.2022')
+  .withAuthor('LVD-02')
+  .withDate('15.02.2023')
   .withDefaultLocale(Locale.EN)
   .withLocales(Locale.EN)
   .withContentElementGroups(
@@ -38,10 +38,11 @@ module.exports = cx.design
       /*.withLabel('Content')*/
       .withLabel('Inhalt')
       .withContentElements(
-        require('@bsi-cx/design-standard-library-web/content-elements/base/text'),
+        require('./../shared/content-elements/text'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/figure'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/banner'),
-        require('@bsi-cx/design-standard-library-web/content-elements/base/button'),
+        require('./../shared/content-elements/button'),
+        require('./../shared/content-elements/hl_button'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/card'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/news-snippet'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/table'),
