@@ -7,8 +7,8 @@ module.exports = cx.design
   .withTitle('BSI CX Master Template - Website')
   .withAuthor('LVD-02')
   .withDate('15.02.2023')
-  .withDefaultLocale(Locale.EN)
-  .withLocales(Locale.EN)
+  .withDefaultLocale(Locale.DE_DE)
+  .withLocales(Locale.DE_DE, Locale.EN_GB)
   .withContentElementGroups(
     cx.contentElementGroup
       .withGroupId('header-Eev4oq')
@@ -42,6 +42,7 @@ module.exports = cx.design
       .withLabel('Inhalt')
       .withContentElements(
         require('@bsi-cx/design-standard-library-web/content-elements/base/text'),
+        require('./../shared/content-elements/text'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/figure'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/banner'),
         require('./../shared/content-elements/button'),

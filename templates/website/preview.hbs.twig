@@ -32,6 +32,8 @@
                     {% include '@bsi-cx/design-standard-library-web/content-elements/' ~ element ~ '/template.twig' %}
                 {% endfor %}
 
+                {% include './../shared/content-elements/text/template.twig' %}
+
                 {% include './../shared/content-elements/button/template.twig' %}
 
             {% endblock %}

@@ -7,8 +7,8 @@ module.exports = cx.design
   .withTitle('BSI CX Master Template - Landingpage')
   .withAuthor('LVD-02')
   .withDate('15.02.2023')
-  .withDefaultLocale(Locale.EN)
-  .withLocales(Locale.EN)
+  .withDefaultLocale(Locale.DE_DE)
+  .withLocales(Locale.DE_DE, Locale.EN_GB)
   .withContentElementGroups(
     cx.contentElementGroup
       .withGroupId('header-Eev4oq')
