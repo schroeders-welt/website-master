@@ -5,7 +5,7 @@ const contentElement = require('@bsi-cx/design-standard-library-web/content-elem
 module.exports = contentElement(
   require('./template.twig'),
   'text-df65hj',
-  'Text',
+  'Text mit Rahmen',
   'text-part-vb45kl',
   'Text'
 );

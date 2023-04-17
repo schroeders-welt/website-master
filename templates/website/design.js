@@ -37,12 +37,16 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/base/h2'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/h3')),
     cx.contentElementGroup
+      .withGroupId('content-JFL3Ks')
+      .withLabel('Textboxen')
+      .withContentElements(
+        require('@bsi-cx/design-standard-library-web/content-elements/base/text'),
+        require('./../shared/content-elements/text')),        
+    cx.contentElementGroup
       .withGroupId('content-JFLFHv')
       /*.withLabel('Content')*/
       .withLabel('Inhalt')
       .withContentElements(
-        require('@bsi-cx/design-standard-library-web/content-elements/base/text'),
-        require('./../shared/content-elements/text'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/figure'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/banner'),
         require('./../shared/content-elements/button'),
@@ -54,8 +58,7 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-web/content-elements/base/social-media-follow'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/social-media-share'),
         require('@bsi-cx/design-standard-library-web/content-elements/base/chart'),
-        require('@bsi-cx/design-standard-library-web/content-elements/base/html'),
-      ),
+        require('@bsi-cx/design-standard-library-web/content-elements/base/html')),
     cx.contentElementGroup
       .withGroupId('forms-NjbmnQ')
       /*.withLabel('Forms')*/
